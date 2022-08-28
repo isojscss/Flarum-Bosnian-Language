@@ -1,19 +1,18 @@
 {
-	"name": "yourname/flarum-lang-bosnian",
+	"name": "flarum/bosnian-lang",
 	"type": "flarum-extension",
 	"description": "Bosnian language pack for Flarum.",
-	"homepage": "https://github.com/isojscss/flarum-lang-bosnian",
 	"keywords": [
-		"locale",
 		"flarum",
-		"ba-locale"
+		"bosnian",
+		"language"
 	],
 	"license": "MIT",
+	"homepage": "https://flarum.org",
 	"authors": [
 		{
 			"name": "Ismar Hadzic",
-			"email": "ismar.hadzic1999@gmail.com",
-			"homepage": "https://ludoa.ba/"
+			"email": "ismar.hadzic1999@gmail.com"
 		}
 	],
 	"support": {
@@ -21,25 +20,26 @@
 		"source": "https://github.com/isojscss/flarum-lang-bosnian"
 	},
 	"require": {
-		"flarum/core": "^1.3"
+		"flarum/core": "^1.2"
 	},
-	"minimum-stability": "dev",
-	"prefer-stable": true,
 	"extra": {
+		"branch-alias": {
+			"dev-master": "1.x-dev"
+		},
 		"flarum-extension": {
 			"title": "Bosnian",
 			"icon": {
 				"image": "icon.svg",
+				"backgroundColor": "#ffffff",
 				"backgroundSize": "cover",
 				"backgroundPosition": "center"
 			}
 		},
 		"flarum-locale": {
 			"code": "ba",
-			"title": "Bosnian"
+			"title": "Bosanski"
 		},
 		"extiverse": {
-			"discuss": ""
 		}
 	}
 }
