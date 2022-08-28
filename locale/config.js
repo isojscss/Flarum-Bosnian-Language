@@ -1,5 +1,4 @@
-// Bosanski [ba]
-import dayjs from 'dayjs'
+// Find more on https://github.com/iamkun/dayjs/blob/dev/src/locale/ba.js
 
 const translator = {
   words: {
@@ -37,9 +36,9 @@ const translator = {
   }
 }
 
-const locale = {
+dayjs.locale({
   name: 'ba',
-  weekdays: 'Nedjelja_Ponedjeljak_Utorak_Srijeda_Četvrtak_Petak_Subota'.split('_'),
+  weekdays: 'Nedjelja_Ponedeljak_Utorak_Srijeda_Četvrtak_Petak_Subota'.split('_'),
   weekdaysShort: 'Ned._Pon._Uto._Sri._Čet._Pet._Sub.'.split('_'),
   weekdaysMin: 'ne_po_ut_sr_če_pe_su'.split('_'),
   months: 'Januar_Februar_Mart_April_Maj_Jun_Jul_Avgust_Septembar_Oktobar_Novembar_Decembar'.split('_'),
@@ -69,8 +68,4 @@ const locale = {
     LLL: 'D. MMMM YYYY. H:mm',
     LLLL: 'dddd, D. MMMM YYYY. H:mm'
   }
-}
-
-dayjs.locale(locale, null, true)
-
-export default locale
+})
